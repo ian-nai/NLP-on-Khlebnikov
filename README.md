@@ -3,7 +3,7 @@ NLP on works by Velimir Khlebnikov.
 
 NLP on works by Peguy. This repository is an outgrowth of the [Non-English NLP Tutorial](https://github.com/ian-nai/Non-English-NLP-Tutorial).
 <p align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Chlebnikow.jpg" height="426" width="272"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Chlebnikow.jpg" height="390" width="273"/>
 </p>
 ## Getting Started
 Install required dependencies:
