@@ -1,7 +1,5 @@
 # NLP-on-Khlebnikov
-NLP on works by Velimir Khlebnikov.
-
-NLP on works by Peguy. This repository is an outgrowth of the [Non-English NLP Tutorial](https://github.com/ian-nai/Non-English-NLP-Tutorial).
+NLP on works by Velimir Khlebnikov. This repository is an outgrowth of the [Non-English NLP Tutorial](https://github.com/ian-nai/Non-English-NLP-Tutorial).
 <p align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Chlebnikow.jpg" height="390" width="273"/>
 </p>
@@ -12,11 +10,11 @@ Install required dependencies:
 pip3 install -r requirements.txt
 ```
 ## Scope
-This repository is a starting point for using NLP to analyze and visualize various aspects of the poetry and plays of Charles Péguy. Code may be updated and added as necessary while the project progresses.
+This repository is a starting point for using NLP to analyze and visualize various aspects of the poetry of Velimir Khlebnikov. Code may be updated and added as necessary while the project progresses.
 
 ## What This Repository Contains
 #### <span style="text-decoration: underline">CSVs</span>
-A collection of .csv files containing data gleaned from analyzing the texts using NLP. The sub-folders in this section contain data for different models that were used to process the texts, the fr_core_news_lg and fr_dep_news_trf models from spaCy and the Stanza French model from Stanford's Stanza library. There is also a folder for data used in visualizing the texts using graphs.
+A collection of .csv files containing data gleaned from analyzing the texts using NLP. The sub-folders in this section contain data for different models that were used to process the texts, the ru_core_news_lg model from spaCy and the Stanza French model from Stanford's Stanza library. There is also a folder for data used in visualizing the texts using graphs.
 
 #### Original Texts
 The original texts of Khlebnikov's complete poems:
@@ -26,7 +24,7 @@ The original texts of Khlebnikov's complete poems:
 
 
 #### Pickle Files
-These are pickled NLP models (using the fr_dep_news_trf spaCy model) of the original texts, broken up into smaller chunks to avoid file size limitations.
+These are pickled NLP models (using the ru_core_news_lg spaCy model) of the original texts, broken up into smaller chunks to avoid file size limitations.
 
 #### Python Code
 The Python files contained here perform the NLP used to generate the CSVs and visualizations. The files are as follows:
