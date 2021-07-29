@@ -27,7 +27,7 @@ for x in first_list:
 print(poem_list)
 
 
-with open('poems_stressed_2.txt', 'w') as f:
+with open('poems_stressed_1904-1916.txt', 'w') as f:
     for poem in poem_list:
         for line in poem:
             formatted_output = str(line).replace('"', '').replace("'", '')
