@@ -331,42 +331,6 @@ plt.show()
 mpld3.save_html(fig,"1917-1922_words_long_words.html")
 mpld3.fig_to_html(fig,template_type="simple")
 
-'''
-# bar graph with length of lines across all texts
-all_files = ['vis_test_le_porche_du_mystere_de_la_deuxieme_vertu.txt.csv',
-'vis_test_la_tapisserie_de_sainte_genevieve.txt.csv',
-'vis_test_la_tapisserie_notre_dame.txt.csv',
-'vis_test_eve.txt.csv',
-'vis_test_le_mystere_de_la_charite_de_jeanne_darc.txt.csv',
-'vis_test_le_mystere_des_saints_innocents.txt.csv']
-li = []
-for filename in all_files:
-    df = pd.read_csv(filename, index_col=None, header=0)
-    li.append(df)
-frame = pd.concat(li, axis=0, ignore_index=True)
-print(frame)
-avg_length_graph = []
-for f in frame['avg length of lines']:
-    avg_length_graph.append(f)
-print(avg_length_graph)
-from textwrap import wrap
-data = {' Le Porche du Mystère de la Deuxième Vertu (1912)':avg_length_graph[0], 'La Tapisserie de Sainte Geneviève et de Jeanne d\'Arc (1913)':avg_length_graph[1], 'La Tapisserie de Notre-Dame (1913)':avg_length_graph[2],
-        'Ève (1913)':avg_length_graph[3], 'Le Mystère de la Charité de Jeanne d\'Arc (1910)': avg_length_graph[4], 'Le Mystère des Saints Innocents (1912)': avg_length_graph[5]}
-poems = list(data.keys())
-values = list(data.values())
-poems = [ '\n'.join(wrap(l, 20)) for l in poems ]
-fig, ax = plt.subplots()
-# creating the bar plot
-ax.bar(poems, values, color ='blue',
-        width = 0.4)
-plt.xlabel("Texts")
-plt.ylabel("Avg Line Length")
-plt.title("Avg Line Lengths Across Texts")
-plt.savefig("all_poems_length_graph.png")
-plt.show()
-mpld3.save_html(fig,"all_poems_length_graph.html")
-mpld3.fig_to_html(fig,template_type="simple")
-'''
 
 # output data to csv
 with open(('vis_test_' + input_files_full[0] + '.csv'), 'w') as csvfile:
