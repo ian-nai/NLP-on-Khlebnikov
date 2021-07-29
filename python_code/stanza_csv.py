@@ -3,7 +3,7 @@ from collections import Counter
 import csv
 from nltk.tokenize import LineTokenizer
 
-files = ['lines_poems_2.txt']
+files = ['1904-1916_no_dates_no_titles_no_stopwords.txt']
 
 
 list_nums = []
