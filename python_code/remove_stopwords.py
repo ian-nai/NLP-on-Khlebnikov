@@ -6,7 +6,7 @@ import re
 
 index_num = 0
 
-# NLTK's default French stopwords
+# NLTK's default Russian stopwords
 default_stopwords = set(nltk.corpus.stopwords.words('russian'))
 
 input_files = ['poems_no_dates_1.txt', 'poems_no_dates_2.txt']
