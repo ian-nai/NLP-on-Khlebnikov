@@ -28,11 +28,10 @@ These are pickled NLP models (using the ru_core_news_lg spaCy model) of the orig
 
 #### Python Code
 The Python files contained here perform the NLP used to generate the CSVs and visualizations. The files are as follows:
-* remove_stopwords.py - 
+* remove_stopwords.py - Tokenize the poems by lines and remove stopwords.
 * ru_core_news_lg.py - Run the spaCy csv_ru_core_news_lg model on the text(s) included in the code and output the results to a CSV file.
 * stanza_csv.py - Run Stanford's Stanza library on the text(s) included in the code and output the results to a .csv file.
-* stress_detection.py - 
-* liv_rix_readability_test.py - Perform the Liv and Rix readability tests on the text(s) included in the code and output the results in the terminal.
+* stress_detection.py - Run stress detection on specified texts and output .txt files with the stress marks denoted by a '+'.
 * make_pickles.py - Create the pickle files for uploading to GitHub.
 * visualizations.py - Code to generate various visualizations of textual data using matplotlib.
 
