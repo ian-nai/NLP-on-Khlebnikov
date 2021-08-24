@@ -3,12 +3,14 @@ NLP on works by Velimir Khlebnikov. This repository is an outgrowth of the [Non-
 <p align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Chlebnikow.jpg" height="390" width="273"/>
 </p>
+
 ## Getting Started
 Install required dependencies:
-
 ```
 pip3 install -r requirements.txt
+pip3 install git+https://github.com/Desklop/StressRNN
 ```
+
 ## Scope
 This repository is a starting point for using NLP to analyze and visualize various aspects of the poetry of Velimir Khlebnikov. Code may be updated and added as necessary while the project progresses.
 
